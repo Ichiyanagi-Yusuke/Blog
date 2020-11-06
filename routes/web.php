@@ -27,3 +27,12 @@ Route::get('/blog/edit/{id}','BlogController@showEdit')->name('edit');
 Route::post('/blog/update','BlogController@exeUpdate')->name('update');
 //削除
 Route::post('/blog/delete/{id}','BlogController@exeDelete')->name('delete');
+
+
+
+/*
+|---------------------------------------------------------------------------
+| レンタル票
+|---------------------------------------------------------------------------
+*/
+Route::get('/rental','RentalController@rentalIndex')->name('rental');
